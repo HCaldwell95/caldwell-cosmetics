@@ -1,0 +1,46 @@
+
+/* Wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;  
+}
+
+/* Heading styles */
+h2, h3, h4, h5, h6 {
+    color: black;
+    text-transform: uppercase;
+}
+
+/* Style to hide unwanted headings */
+.hidden-heading {
+    display: none;
+}
+
+/* Style to remove underline from hyperlinks */
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    line-height: 1em;
+}
