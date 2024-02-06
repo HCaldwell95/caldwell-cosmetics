@@ -230,6 +230,30 @@ figure img {
     padding: 0px 10%;
 }
 
+/* Style to push main content to fill page */
+main {
+    flex: 1 0 auto;
+}
+
+/* About section */
+#about {
+    background-color: #ffffff;
+    top: 0;
+    position: relative;
+    margin: 5px 30px 10px;
+}
+
+/* Home page content */
+#about-home {
+    text-align: center;
+    line-height: 1cm;
+}
+
+#about-home>h3 {
+    font-size: 70%;
+    padding-bottom: 1.5em;
+    letter-spacing: 1mm;
+}
 
 
 
