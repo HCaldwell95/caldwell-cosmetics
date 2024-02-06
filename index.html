@@ -21,19 +21,29 @@
             <h1 id="logo-lab">Lab</h1>
         </a>
 
-        <!-- Nav dropdown -->
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <!-- Font Awesome Icon -->
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-duotone fa-bars"></i></i></label>
-
-        <!-- Nav bar -->
-        <nav id="nav-bar">
-            <ul id="menu">
-                <li><a href="index.html" class="active nav-dropdown-singular">Home</a></li>
-                <li><a href="bookings.html" class="nav-dropdown-singular">Bookings</a></li>
-                <li><a href="contact.html" class="nav-dropdown-singular">Contact Us</a></li>
+        <!-- Dropdown button -->
+        <div class="dropdown">
+            <input type="checkbox" id="dropdown" />
+            <label for="dropdown" class="dropdown-btn">
+              <span>Home</span>
+              <span class="arrow"></span>
+            </label>
+            
+            <ul class="dropdown-content" role="menu">
+                <li><a href="products.html" class="dropdown-singular">Products</a></li>
+                <li><a href="bookings.html" class="dropdown-singular">Bookings</a></li>
+                <li><a href="testimonials.html" class="dropdown-singular">Testimonials</a></li>
+                <li><a href="contact.html" class="dropdown-singular">Contact Us</a></li>
             </ul>
-        </nav>
+          </div>
+            <!-- Dropdown content -->
+            <ul class="dropdown-content">
+                <li><a href="products.html" class="dropdown-singular">Products</a></li>
+                <li><a href="bookings.html" class="dropdown-singular">Bookings</a></li>
+                <li><a href="testimonials.html" class="dropdown-singular">Testimonials</a></li>
+                <li><a href="contact.html" class="dropdown-singular">Contact Us</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>

@@ -81,86 +81,84 @@ header a {
     color: #000000;
 }
 
-/* Dropdown menu */
-#menu {
-    font-size: 90%;
-    text-align: center;
-    top: 25px;
-    right: 0;
-    letter-spacing: 3px;
-    list-style-type: none;
-    position: absolute;
-    float: none;
-    padding: 5px 0.2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+/* Dropdown styles */
 
-/* Positioning */
-#menu > li {
-    margin-bottom: 1em;
-    padding: 0;
-}
-
-.nav-dropdown-singular {
-    display: flex;
-    align-items: center;
-}
-
-/* Active page highlighter */
-.active {
-    color: red;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-/* Nav bar styles with dropdown toggle */
-#navbar {
-    position: absolute;
-    right: 0;
-    padding: 0 .25rem;
-    display: none;
-    top: 25px;
-}
-
-nav>li {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-right: 10px;
+.dropdown {
+    max-width: 13em;
+    margin: 80px auto 0;
+    position: absolute;;
     width: 100%;
+    text-align: center;
+    right: -30px;
+    top: -60px;
 }
-
-#navbar a {
+  
+.dropdown-btn {
+    background:#302321;
+    font-size: 18px;
     text-transform: uppercase;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 20px;
+    width: 65%;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em 2px;
+    border-radius: 0.5em;
+    cursor: pointer;
 }
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
+  
+.arrow {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    transition: transform ease-in-out 0.3s;
+}
+  
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    top: 3.2em;
+    width: 65%;
+    visibility: hidden;
+    transform: translateY(-1em);
+    transition: transform ease 0.3s;
+}
+  
+input[type="checkbox"]:checked ~ .dropdown-content {
+    visibility: visible;
+    transform: translateY(0);
+}
+  
+.dropdown-content li {
+    background: #2f3238;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+}
+  
+input[type="checkbox"]:checked + label > .arrow {
+    transform: rotate(180deg);
+}
+  
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+  
+input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 20px rgb(83, 83, 83);
+}
+  
+.dropdown-content li:hover {
+    background: #1d1f24;
+}
+  
+.dropdown-content li a {
     display: block;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-/* Hamburger icon */
-.nav-toggle-label {
-    font-size: 1.5em;
-    position: relative;
-    vertical-align: middle;
-    top: 15px;
-    right: 15px;
-    color: #ffffff;
+    padding: 0.7em 0.5em;
+    color: #fff;
+    margin: 0.1em 0;
+    text-decoration: none;
 }
 
 /* Hero section (home)*/
@@ -352,7 +350,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     /* Transforms dropbox to full menu on display */
-    #navbar {
+    #nav-bar {
         display: block;
         position: absolute;
         box-shadow: none;
@@ -364,7 +362,7 @@ footer {
     }
 
     /* Remove backgrounds and borders from menu */
-    #navbar a {
+    #nav-bar a {
         text-transform: uppercase;
         background-color: transparent;
         border: none;
