@@ -44,3 +44,32 @@ header {
     left: 0;
     line-height: 1em;
 }
+
+/* Logo main heading styles */
+h1 {
+    color: darksalmon;
+    text-transform: uppercase;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 0.5em;
+    padding-left: 0.25em;
+    padding-right: 0.5em;
+    color:darksalmon
+}
+
+#logo-skin {
+    font-size: 140%;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: darksalmon;
+}
+
+#logo-lab {
+    font-size: 190%;
+    padding-top: 0.1em;
+    letter-spacing: 0.1rem;
+}
