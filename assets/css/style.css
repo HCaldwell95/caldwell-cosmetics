@@ -263,6 +263,16 @@ main {
     margin: 0px 12rem;
 }
 
+/* Footer Content */
+
+.back-to-top {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    /* Stick to the bottom of the viewport */
+    padding-top: 10px;
+    font-size: 130%;  
+}
 
 
 
