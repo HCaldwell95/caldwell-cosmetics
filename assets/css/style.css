@@ -8,7 +8,7 @@
 
 /* General styles */
 body {
-    padding: 84px 0px;
+    padding-top: 84px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -293,10 +293,13 @@ footer {
     color:pink;
 }
 
-.social-networks>ul {
+/* Social media link styles */
+.social-networks {
     padding-top: 10px;
-    padding-left: 3%;
-    padding-right: 3%;
+    margin: 5px 4%;
+}
+
+.social-networks>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -307,9 +310,38 @@ footer {
     color: azure;
 }
 
+/* Footer address styles */
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 10px;
+    margin: 3px 3%;
+}
+
+#footer-address {
+    color: azure;
+    text-align: left;
+    letter-spacing: .5mm;
+    font-size: 80%;
+
+}
+
+#footer-block {
+    text-align: center;
+    color: rgb(210, 210, 172);
+    letter-spacing: .5mm;
+    font-size: 75%;
 
 
+}
 
+.small-print {
+    font-size: 60%;
+    color: rgb(210, 210, 172);
+    padding-bottom: 10px;
+}
 
 /* Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
