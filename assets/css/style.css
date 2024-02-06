@@ -184,6 +184,56 @@ figure img {
     object-fit: cover;
 }
 
+/* Colour overlay to dim the background image */
+.color-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .69);
+    margin: 0;
+    display: block;
+    max-height: 550px;
+    width: 100%;
+}
+
+/* Text overlaying hero image */
+#cover-text {
+    color: azure;
+    text-align: center;
+    font-size: 100%;
+    padding-top: 3em;
+    margin: 50px 50px;
+}
+
+#cover-text>h2 {
+    /*font-family: 'Tai Heritage Pro', serif;*/
+    color: azure;
+    text-justify: auto;
+}
+
+#est-tag {
+    font-size: 70%;
+    color: azure;
+    padding-bottom: 2em;
+}
+
+#home-cover-heading, #treatments-cover-heading, #bookings-cover-heading, #contact-cover-heading {
+    margin-top: 50px;
+    font-size: 250%;
+}
+
+#cover-text>p {
+    line-height: 8mm;
+    margin: 0px 15%;
+    padding: 0px 10%;
+}
+
+
+
+
+
 
 
 /* Medium devices such as tables (768px and up) */
