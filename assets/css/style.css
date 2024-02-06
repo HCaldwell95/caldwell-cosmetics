@@ -73,3 +73,91 @@ h1 {
     padding-top: 0.1em;
     letter-spacing: 0.1rem;
 }
+
+/* Nav links */
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Dropdown menu */
+#menu {
+    font-size: 70%;
+    text-align: center;
+    top: 25px;
+    right: 0;
+    letter-spacing: 3px;
+    list-style-type: none;
+    position: absolute;
+    float: none;
+    padding: 1px 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Positioning */
+#menu > li {
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.nav-dropdown-singular {
+    display: flex;
+    align-items: center;
+}
+
+/* Active page highlighter */
+.active {
+    color: red;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/* Nav bar styles with dropdown toggle */
+#navbar {
+    position: absolute;
+    right: 0;
+    padding: 0 .25rem;
+    display: none;
+    top: 25px;
+}
+
+nav>li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 10px;
+    width: 100%;
+}
+
+#navbar a {
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.nav-toggle-label {
+    font-size: 1.5em;
+    position: relative;
+    vertical-align: middle;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+}
