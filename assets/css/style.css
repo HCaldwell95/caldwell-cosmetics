@@ -265,6 +265,17 @@ main {
 
 /* Footer Content */
 
+footer {
+    background-color:#302321;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    margin-top: 10px;
+    border-top: 2px ridge black;
+}
+
+/* Style for back-to-top class */
 .back-to-top {
     text-align: center;
     position: sticky;
@@ -272,6 +283,10 @@ main {
     /* Stick to the bottom of the viewport */
     padding-top: 10px;
     font-size: 130%;  
+}
+
+.back-to-top a {
+    color: azure;
 }
 
 
