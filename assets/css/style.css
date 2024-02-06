@@ -263,6 +263,27 @@ main {
     margin: 0px 12rem;
 }
 
+/* Treatments styles */
+
+
+
+/* Social media link styles */
+.social-networks {
+    padding-top: 10px;
+    margin: 5px 4%;
+}
+
+.social-networks>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.social-networks a {
+    color: pink;
+}
+
 /* Footer Content */
 
 footer {
@@ -291,23 +312,6 @@ footer {
 
 .back-to-top a:hover {
     color:pink;
-}
-
-/* Social media link styles */
-.social-networks {
-    padding-top: 10px;
-    margin: 5px 4%;
-}
-
-.social-networks>ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.social-networks a {
-    color: azure;
 }
 
 /* Footer address styles */
