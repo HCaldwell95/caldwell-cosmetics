@@ -289,6 +289,26 @@ footer {
     color: azure;
 }
 
+.back-to-top a:hover {
+    color:pink;
+}
+
+.social-networks>ul {
+    padding-top: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.social-networks a {
+    color: azure;
+}
+
+
+
 
 
 /* Medium devices such as tables (768px and up) */
