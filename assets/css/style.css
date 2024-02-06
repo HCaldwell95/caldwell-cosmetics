@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color:rgb(255, 251, 249);
 }
 
 /* Heading styles */
@@ -31,7 +32,7 @@ a {
 }
 
 header {
-    background-color:lightgray;
+    background-color: #ecd2be;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,7 @@ header {
 
 /* Logo main heading styles */
 h1 {
-    color: darksalmon;
+    color: #302321;
     text-transform: uppercase;
 }
 
@@ -58,14 +59,14 @@ h1 {
     padding-bottom: 0.5em;
     padding-left: 0.25em;
     padding-right: 0.5em;
-    color:darksalmon
+    color:#302321;
 }
 
 #logo-skin {
     font-size: 140%;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: darksalmon;
+    color: #302321;
 }
 
 #logo-lab {
@@ -82,7 +83,7 @@ header a {
 
 /* Dropdown menu */
 #menu {
-    font-size: 70%;
+    font-size: 90%;
     text-align: center;
     top: 25px;
     right: 0;
@@ -90,7 +91,7 @@ header a {
     list-style-type: none;
     position: absolute;
     float: none;
-    padding: 1px 0.2em;
+    padding: 5px 0.2em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -192,7 +193,7 @@ figure img {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(61, 60, 60, 0.69);
+    background-color: rgba(95, 95, 95, 0.4);
     margin: 0;
     display: block;
     max-height: 550px;
@@ -238,10 +239,10 @@ main {
 
 /* About section */
 #about {
-    background-color: #ffffff;
+    background-color:rgb(255, 251, 249);
     top: 0;
     position: relative;
-    margin: 5px 30px 10px;
+    margin: 5px 10rem 10px;
 }
 
 /* Home page content */
