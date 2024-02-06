@@ -1,3 +1,20 @@
+
+## Sources
+
+Home Hero Image:
+Image by <a href="https://www.freepik.com/free-photo/creative-portrait-young-adult_20931459.htm#page=2&query=skin%20clinic&position=16&from_view=search&track=country_rows_v1&uuid=ba6dbf32-a1dd-4e4a-a2d2-f745196dd8d5">Freepik</a>
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Hayden Caldwell,
