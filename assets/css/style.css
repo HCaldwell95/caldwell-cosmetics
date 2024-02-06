@@ -161,3 +161,41 @@ nav>li {
     right: 15px;
     color: #ffffff;
 }
+
+/* Medium devices such as tables (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Transforms dropbox to full menu on display */
+    #navbar {
+        display: block;
+        position: absolute;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        background-color: white;
+        right: 0;
+        top: 0;
+    }
+
+    /* Remove backgrounds and borders from menu */
+    #navbar a {
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        padding: 0 20px;
+    }
+    /* Positioning styles */
+    #menu {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+}
