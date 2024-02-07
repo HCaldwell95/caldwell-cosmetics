@@ -8,7 +8,6 @@
 
 /* General styles */
 body {
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,9 +35,9 @@ header {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
-    padding: 20px 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
     z-index: 1000;
     top: 0;
@@ -80,6 +79,35 @@ header a {
     text-decoration: none;
     color: #000000;
 }
+
+/* Transforms dropbox to full menu on display */
+#dropdown {
+    display: none;
+}
+
+/* Remove backgrounds and borders from menu */
+.dropdown a {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+}
+/* Positioning styles */
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown-content>li {
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+.dropdown-btn {
+    display: none;
+}
+
 
 /* Hero section (home)*/
 #hero {
@@ -267,10 +295,10 @@ footer {
 }
 
 /* Small devices such as mobile phones (up to 414px) */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 684px) {
 
     body {
-        margin-top: 84px;
+        margin-top: 64px;
     }
     
     /* Dropdown styles */
@@ -281,7 +309,7 @@ footer {
         width: 100%;
         text-align: center;
         right: -60px;
-        top: -60px;
+        top: -65px;
     }
     
     .dropdown-btn {
@@ -312,6 +340,7 @@ footer {
         top: 3.2em;
         width: 65%;
         visibility: hidden;
+        flex-direction: column;
         transform: translateY(-1em);
         transition: transform ease 0.3s;
     }
@@ -323,8 +352,12 @@ footer {
     
     .dropdown-content li {
         background: #2f3238;
+        font-size: 14px;
+        text-align: center;
         border-radius: 0.5em;
         text-transform: uppercase;
+        width: 100%;
+        padding-right: 10px;
     }
     
     input[type="checkbox"]:checked + label > .arrow {
