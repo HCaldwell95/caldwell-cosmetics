@@ -11,6 +11,12 @@ Hero Home Bust:
 Dropdown menu:
 https://blog.logrocket.com/making-dropdown-menus-css/
 
+Scrolling Text:
+https://blog.hubspot.com/website/scrolling-text-css
+https://www.w3schools.com/css/css3_animations.asp
+
+
+
 
 
 
