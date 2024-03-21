@@ -19,25 +19,32 @@
 
 <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand mr-5">Skin Lab</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/products">Products</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/bookings">Bookings</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/testimonials">Testimonials</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/contact-us">Contact Us</a></li>
-            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-        </ul>
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><i>This is sample text for my navbar!</i></p>
-            <a href="/login">Sign In / Sign Up</a>
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand mr-auto">Skin Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/products">Products</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/bookings">Bookings</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/testimonials">Testimonials</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+                </ul>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>This is sample text for my navbar!</i></p>
+                <a href="/login">Sign In / Sign Up</a>
+            </div>
         </div>
     </nav>
 
     
-    <article class="container">
-        <!-- Logo -->
-    <!--
+    <!-- 
+        <article class="container">
+         
+            Logo Comment
             <div class="row">
             <div class="col-1">
                 <a href="index.html" class="col-12" id="logo">
@@ -66,31 +73,28 @@
             </ul>
         </div>
     -->
-    </header>
-
-    <main>
 
         <!-- Hero image section -->
 
-        <section id="hero">
-            <!-- Figure used to maintian positioning of page sections -->
-            <figure id="home-hero">
-                <img src="assets/images/hero-home-bust.jpg" alt="Image showing x">
-            </figure>
-
+    <section class="hero">
+        <div class="container-fluid p-0 position-relative">
+            <img src="assets/images/hero-home-bust.jpg" class="img-fluid" alt="Image showing x">
             <!-- Transparent colouring dark -->
-            <div class="color-overlay">
-                <div id="cover-text">
+            <div class="color-overlay"></div>
+                <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
                     <h2 id="home-cover-heading">Skin Lab</h2>
                     <h3 id="est-tag">Est.2024</h3>
                     <p>
                         Where natural beauty meets personalized care. 
                         <br>
                         Join us in celebrating the beauty of simplicity, promoting wellness, and 
-                        discovering the best version of yourself.</p>
+                        discovering the best version of yourself.
+                    </p>
                 </div>
             </div>
-        </section>
+            </div>
+        </div>
+    </section>
         
         <!-- Scrolling Text Bar -->
 
@@ -100,29 +104,30 @@
 
         <!-- About Us Content -->
 
-        <section class="about">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-uppercase">About Us</h2>
-                    <hr />
-                </div>
+        <main class="container">
+            <section class="about">
                 <div class="row">
                     <div class="col-12">
-                        <p>
-                            Skin Lab offers carefully curated natural treatments to enhance inner beauty and promote a positive mindset. 
-                            Led by a seasoned ITU Nurse with six years of experience, our mission is to redefine beauty through holistic well-being, accentuating individual uniqueness. 
-                            <br>
-                            <br>
-                            Specializing in skin treatments tailored to your radiance, we provide a serene environment adorned in calming hues, inviting you on a transformative journey 
-                            of self-love and confidence. 
-                            <br>
-                            <br>
-                            At Skin Lab, we blend expertise with personalized care to nurture both external beauty and overall well-being, celebrating simplicity and helping you discover your best self.
-                        </p>
+                        <h2 class="text-uppercase">About Us</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                Skin Lab offers carefully curated natural treatments to enhance inner beauty and promote a positive mindset. 
+                                Led by a seasoned ITU Nurse with six years of experience, our mission is to redefine beauty through holistic well-being, accentuating individual uniqueness. 
+                                <br>
+                                <br>
+                                Specializing in skin treatments tailored to your radiance, we provide a serene environment adorned in calming hues, inviting you on a transformative journey 
+                                of self-love and confidence. 
+                                <br>
+                                <br>
+                                At Skin Lab, we blend expertise with personalized care to nurture both external beauty and overall well-being, celebrating simplicity and helping you discover your best self.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <!-- Quotes Content -->
 
@@ -151,6 +156,9 @@
                                 <p>I have never felt better in my own skin! No nasty chemicals and all natural treatments!</p>
                                 <footer class="blockquote-footer">- Jill Doe on <cite title="Facebook">Facebook</cite></footer>
                             </blockquote>
+                        </div>
+                    </div>
+                </div>
             </div>
         
             <div class="page-divider"></div>
