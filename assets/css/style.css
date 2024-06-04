@@ -45,7 +45,7 @@ header {
     line-height: 1em;
 }
 
-/* Logo main heading styles */
+/* -------------------------------------Logo main heading styles */
 h1 {
     color: #302321;
     text-transform: uppercase;
@@ -74,7 +74,7 @@ h1 {
     letter-spacing: 0.1rem;
 }
 
-/* Navigation links */
+/* -----------------------------------------------Navigation links */
 header a {
     text-decoration: none;
     color: #000000;
@@ -108,7 +108,7 @@ header a {
     display: none;
 }
 
-/* Hero section (home)*/
+/* ------------------------------------------------Hero section (home)*/
 .hero {
     width: 100%;
     position: relative;
@@ -173,6 +173,8 @@ header a {
     margin: 0px 15%;
     padding: 0px 10%;
 }
+
+/* -----------------------------------------------Scrolling text styles */
 
 #scroll-container {
     border-bottom: 3px groove #ecd2be9a;
@@ -240,7 +242,7 @@ main {
 }
 */
 
-/* Home page content */
+/* ------------------------------------------Home page content */
 #about-home {
     text-align: center;
     line-height: 1cm;
@@ -258,7 +260,7 @@ main {
     margin: 0px 12rem;
 }
 
-/* Social media link styles */
+/* -------------------------------------Social media link styles */
 .social-networks {
     padding-top: 10px;
     margin: 5px 4%;
@@ -276,7 +278,7 @@ main {
     color: pink;
 }
 
-/* Footer Content */
+/* ---------------------------------------------Footer Content */
 
 footer {
     background-color:#302321;
@@ -321,7 +323,6 @@ footer {
     text-align: left;
     letter-spacing: .5mm;
     font-size: 80%;
-
 }
 
 #footer-block {
@@ -329,8 +330,6 @@ footer {
     color: rgb(210, 210, 172);
     letter-spacing: .5mm;
     font-size: 75%;
-
-
 }
 
 .small-print {
@@ -339,11 +338,13 @@ footer {
     padding-bottom: 10px;
 }
 
-/* Small devices such as mobile phones (up to 576px) */
+/* ---------------------------------------------Media queries */
+
+/* --------------Small devices such as mobile phones (up to 576px) */
 @media screen and (max-width: 576px) {
 
     body {
-        margin-top: 64px;
+    
     }
 
     #cover-text {
@@ -435,6 +436,6 @@ footer {
     }
 }
 
-/* Medium devices such as tables (768px and up) */
+/* -------------------------------------Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
 }
