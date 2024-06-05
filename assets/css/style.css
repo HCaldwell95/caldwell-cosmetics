@@ -1,3 +1,27 @@
+/* Colour References
+
+    Background colours:
+
+    Body background: rgb(255, 251, 249);
+    Hero image overlay: rgba(95, 95, 95, 0.4);
+    Accent Peach: ##eed6c2;
+
+    ----------------------
+
+    Font Colours:
+    Dark Brown: color: #302321; (also used for social media links)
+
+
+
+
+
+
+
+
+*/
+
+
+
 
 /* Wildcard selector to override default styles added by the browser */
 * {
@@ -49,7 +73,7 @@ a {
 }
 
 .navbar-container {
-    background-color: #302321;
+    background-color: #eed6c2;
     padding: 0em 0em;
     box-sizing: border-box;
     z-index: 1000;
@@ -159,7 +183,7 @@ header {
 
 /* -------------------------------------Logo main heading styles */
 h1 {
-    color: #302321;
+    color:#fff;
     text-transform: uppercase;
 }
 
@@ -170,14 +194,14 @@ h1 {
     padding-bottom: 0.5em;
     padding-left: 0.25em;
     padding-right: 0.5em;
-    color:#302321;
+    color:#fff;
 }
 
 #logo-skin {
     font-size: 140%;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: #302321;
+    color: #fff;
 }
 
 #logo-lab {
@@ -243,7 +267,9 @@ header a {
     margin-top: 0.5em;
     font-size: 2.1em;
     font-weight: 400;
-    color: #313131;
+    color: #bebebe;
+    text-shadow:5px 7px 0 #313131;
+    /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff; */
 }
 
 #cover-text>p {
@@ -384,17 +410,18 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .social-networks a {
     font-size: 32px;
-    color: pink;
+    color: #302321;
 }
 
 /* ---------------------------------------------Footer Content */
 
 footer {
-    background-color:#302321;
+    background-color:#eed6c2;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -415,11 +442,11 @@ footer {
 }
 
 .back-to-top a {
-    color: azure; 
+    color: #302321; 
 }
 
 .back-to-top a:hover {
-    color:pink;
+    color:rgb(221, 189, 102);
 }
 
 /* Footer address styles */
@@ -433,7 +460,7 @@ footer {
 }
 
 #footer-address {
-    color: azure;
+    color: #302321;
     text-align: left;
     letter-spacing: .5mm;
     font-size: 80%;
@@ -451,14 +478,14 @@ footer {
 
 #footer-block {
     text-align: right;
-    color: rgb(210, 210, 172);
+    color: #302321;
     letter-spacing: .5mm;
     font-size: 75%;
 }
 
 .small-print {
     font-size: 60%;
-    color: rgb(210, 210, 172);
+    color: #302321;
     padding-bottom: 10px;
 }
 
