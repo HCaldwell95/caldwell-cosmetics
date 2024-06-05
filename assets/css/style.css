@@ -409,8 +409,9 @@ footer {
     position: sticky;
     bottom: 0;
     /* Stick to the bottom of the viewport */
-    padding-top: 10px;
-    font-size: 130%;  
+    padding-top: 2px;
+    margin-bottom: 0;
+    font-size: 120%;  
 }
 
 .back-to-top a {
@@ -426,9 +427,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2%;
-    padding-bottom: 10px;
-    margin: 3px 3%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin: 1px 2%;
 }
 
 #footer-address {
@@ -438,8 +439,18 @@ footer {
     font-size: 80%;
 }
 
+#footer-address p {
+    margin: 0.1rem;
+    font-size: 8px;
+}
+
+#footer-block p {
+    margin: 0.1rem;
+    font-size: 8px;
+}
+
 #footer-block {
-    text-align: center;
+    text-align: right;
     color: rgb(210, 210, 172);
     letter-spacing: .5mm;
     font-size: 75%;
