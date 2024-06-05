@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 
-/* General styles */
+/* ------------------------------General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color:rgb(255, 251, 249);
+    font-size: 14px;
 }
 
 /* Heading styles */
@@ -22,6 +23,10 @@ h2, h3, h4, h5, h6 {
 
 /* Style to hide unwanted headings */
 .hidden-heading {
+    display: none;
+}
+
+.hidden-cover-text {
     display: none;
 }
 
@@ -39,7 +44,7 @@ a {
     width: 80%;
 }
 
-/* Dropdown styles */
+/* -----------------------------------Dropdown styles */
 .dropdown {
     max-width: 13em;
     margin: 80px auto 0;
@@ -123,6 +128,7 @@ input[type="checkbox"]:focus + label {
     text-decoration: none;
 }
 
+/* Styles for the main heading */
 header {
     background-color: #ecd2be9a;
     position: absolute;
@@ -189,7 +195,7 @@ header a {
     background-color: rgba(95, 95, 95, 0.4);
     margin: 0;
     display: block;
-    max-height: 550px;
+    height: auto;
     width: 100%;
 }
 
@@ -229,18 +235,22 @@ header a {
 }
 
 #home-cover-heading, #treatments-cover-heading, #bookings-cover-heading, #contact-cover-heading {
-    margin-top: 50px;
-    font-size: 250%;
+    margin-top: 0.5em;
+    font-size: 2.1em;
+    font-weight: 400;
+    color: #313131;
 }
 
 #cover-text>p {
     line-height: 8mm;
-    margin: 0px 15%;
-    padding: 0px 10%;
+    margin: 0px 15% 100px;
+    padding: 0px 10% 100px;
+
 }
 
 /* -----------------------------------------------Scrolling text styles */
 
+/* Styles for the scroll container */ 
 #scroll-container {
     border-bottom: 3px groove #ecd2be9a;
     width:100%;
@@ -250,23 +260,24 @@ header a {
 }
 
 #scroll-text {
-  /* animation properties */
+  /* Set the initial position of the text for the animation */
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   
+  /* Set the animation properties */
   -moz-animation: my-animation 30s linear infinite;
   -webkit-animation: my-animation 30s linear infinite;
   animation: my-animation 30s linear infinite;
 }
 
-/* for Firefox */
+/* Define the animation keyframes for Firefox */
 @-moz-keyframes my-animation {
   from { -moz-transform: translateX(100%); }
   to { -moz-transform: translateX(-100%); }
 }
 
-/* for Chrome */
+/* Define the animation keyframes for Chrome */
 @-webkit-keyframes my-animation {
   from { -webkit-transform: translateX(100%); }
   to { -webkit-transform: translateX(-100%); }
@@ -274,18 +285,24 @@ header a {
 
 /* Animation keyframes */
 @keyframes my-animation {
+
+  /* At the start of the animation (0%), move the element to the right edge of its container */
   0% {
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 
-  50% { /* Adjusted from 0% to 50% */
+  /* At the halfway point of the animation (50%), move the element to the left, beyond the edge of its container.
+  The element starts moving immediately when the animation begins. */
+  50% { 
     -moz-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
     -webkit-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
     transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
   }
 
+  /* At the end of the animation (100%), keep the element at the same position as at 50%.
+  This creates a seamless loop when the animation repeats */
   100% {
     -moz-transform: translateX(calc(-100% - 100vw));
     -webkit-transform: translateX(calc(-100% - 100vw));
@@ -297,15 +314,6 @@ header a {
 main {
     flex: 1 0 auto;
 }
-
-/* About section 
-.about {
-    background-color:rgb(255, 251, 249);
-    top: 0;
-    position: relative;
-    margin: 5px 10rem 10px;
-}
-*/
 
 /* ------------------------------------------Home page content */
 #about-home {
@@ -434,6 +442,10 @@ footer {
 
 .dropdown-btn {
     display: none;
+}
+
+.hidden-cover-text {
+    display: block;
 }
 
 }
