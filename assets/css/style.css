@@ -30,18 +30,31 @@ h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.small-hr {
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Add transparency to the border color */
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* Style to remove underline from hyperlinks */
 a {
     text-decoration: none;
 }
+/* -----------------------------------Navigation bar styles */
 
+/* Style for the logo link in navbar */
 .logo-link>img {
-    max-width: 100px;
-    max-height: 80px;
+    max-width: 80px;
+    max-height: 30px;
 }
 
-#cover-text {
-    width: 80%;
+.navbar-container {
+    background-color: #302321;
+    padding: 0em 0em;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: relative;
+    height: auto;
 }
 
 /* -----------------------------------Dropdown styles */
@@ -213,17 +226,9 @@ header a {
     text-align: center;
     color:azure;
     z-index: 1;
-    /*
-    color: azure;
-    text-align: center;
-    font-size: 100%;
-    padding-top: 3em;
-    margin: 50px 50px;
-    */
 }
 
 #cover-text>h2 {
-    /*font-family: 'Tai Heritage Pro', serif;*/
     color: azure;
     text-justify: auto;
 }
@@ -320,16 +325,20 @@ main {
 }
 
 /* ------------------------------------------Home page content */
-#about-home {
+
+/* ------------------------------------------About */
+
+.about {
+    padding: 2em 0;
     text-align: center;
-    line-height: 1cm;
-    padding-bottom: 2em;
+    margin: 0 2.5%;
+
 }
 
-#about-home>h3 {
-    font-size: 70%;
-    padding-bottom: 1.5em;
-    letter-spacing: 1mm;
+.about>div>div>h2 {
+    font-size: 90%;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.7mm;
 }
 
 .page-divider {
@@ -337,7 +346,34 @@ main {
     margin: 0px 12rem;
 }
 
-/* -------------------------------------Social media link styles */
+/* ------------------------------------------Quotes */
+
+.media-body {
+    padding: 1em 0;
+    font-style:italic;
+    color: rgba(95, 95, 95, 0.6)
+}
+
+.media-body p {
+    font-size: 80%;
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.6);
+}
+
+.media-body footer {
+    font-size: 80%;
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.6);
+    background-color:rgb(237, 211, 250);
+
+}
+
+/* ------------------------------------------Treatments */
+
+
+/* -------------------------------------Social media links */
+
+
 .social-networks {
     padding-top: 10px;
     margin: 5px 4%;
