@@ -266,9 +266,9 @@ header a {
   transform: translateX(100%);
   
   /* Set the animation properties */
-  -moz-animation: my-animation 30s linear infinite;
-  -webkit-animation: my-animation 30s linear infinite;
-  animation: my-animation 30s linear infinite;
+  -moz-animation: my-animation 27s linear infinite;
+  -webkit-animation: my-animation 27s linear infinite;
+  animation: my-animation 27s linear infinite;
 }
 
 /* Define the animation keyframes for Firefox */
@@ -284,31 +284,35 @@ header a {
 }
 
 /* Animation keyframes */
-@keyframes my-animation {
-
-  /* At the start of the animation (0%), move the element to the right edge of its container */
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(200%); }
+    to { -moz-transform: translateX(-200%); }
   }
-
-  /* At the halfway point of the animation (50%), move the element to the left, beyond the edge of its container.
-  The element starts moving immediately when the animation begins. */
-  50% { 
-    -moz-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
-    -webkit-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
-    transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
+  
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(200%); }
+    to { -webkit-transform: translateX(-200%); }
   }
-
-  /* At the end of the animation (100%), keep the element at the same position as at 50%.
-  This creates a seamless loop when the animation repeats */
-  100% {
-    -moz-transform: translateX(calc(-100% - 100vw));
-    -webkit-transform: translateX(calc(-100% - 100vw));
-    transform: translateX(calc(-100% - 100vw));
+  
+  @keyframes my-animation {
+    0% {
+      -moz-transform: translateX(200%);
+      -webkit-transform: translateX(200%);
+      transform: translateX(200%);
+    }
+  
+    50% { 
+      -moz-transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      -moz-transform: translateX(200%);
+      -webkit-transform: translateX(200%);
+      transform: translateX(200%);
+    }
   }
-}
 
 /* Style to push main content to fill page */
 main {
