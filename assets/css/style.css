@@ -83,9 +83,26 @@ a {
     max-height: 40px;
 }
 
-/* Styles for the navbar button to override Bootstrap */
+/* Styles for the navbar button icon to override Bootstrap */
 .navbar-toggler {
     background-color: #eed6c280;
+}
+
+/* Styles for the navbar dropdown items */
+#navbarNav>ul {
+    display: flex;
+    text-align: right;
+}
+
+#navbarNav>ul a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.active {
+    color: gold!important;
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 /* Styles for the main heading */
