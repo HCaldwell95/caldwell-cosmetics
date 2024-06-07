@@ -311,30 +311,101 @@ main {
     margin: 0px 12rem;
 }
 
-/* ------------------------------------------Quotes */
-
-.media-body {
-    padding: 1em 0;
-    font-style:italic;
-    color: rgba(95, 95, 95, 0.6)
-}
-
-.media-body p {
-    font-size: 80%;
-    font-style: italic;
-    color: rgba(95, 95, 95, 0.6);
-}
-
-.media-body footer {
-    font-size: 80%;
-    font-style: italic;
-    color: rgba(95, 95, 95, 0.6);
-    background-color:rgb(237, 211, 250);
-
-}
 
 /* ------------------------------------------Treatments */
 
+
+
+
+
+/* ------------------------------------------Quotes */
+
+.media-body {
+    padding-top: 1em;
+    font-style:italic;
+    color: rgba(95, 95, 95, 0.8)
+}
+
+.media-body p {
+    font-size: calc(1vw + 1vh); 
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.8);
+    padding-bottom: 2px;
+}
+
+.media-body footer {
+    font-size: calc(1vw + 1vh); 
+    font-style: italic;
+    color:#e09e67;
+    font-weight: 600;
+    background-color: transparent;
+
+}
+
+/* ------------------------------------------Testimonial Styles */
+
+/* Container holding the image and the text */
+.container-testimonial {
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.media-body {
+    position: absolute;
+    top: 15%;
+}
+
+.blockquote {
+    padding-left: 10px;
+    padding-right: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.blockquote-footer {
+    text-align: center;
+    padding-left: 30px;
+}
+
+.blockquote-footer::before {
+    content: "";
+}
 
 /* -------------------------------------Social media links */
 
@@ -359,7 +430,7 @@ main {
 
 /* ---------------------------------------------Footer Content */
 
-footer {
+.footer-main {
     background-color:#eed6c2;
     width: 100%;
     left: 0;
