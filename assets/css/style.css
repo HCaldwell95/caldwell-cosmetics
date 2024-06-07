@@ -1,3 +1,27 @@
+/* Colour References
+
+    Background colours:
+
+    Body background: rgb(255, 251, 249);
+    Hero image overlay: rgba(95, 95, 95, 0.4);
+    Accent Peach: ##eed6c2;
+
+    ----------------------
+
+    Font Colours:
+    Dark Brown: color: #302321; (also used for social media links)
+
+
+
+
+
+
+
+
+*/
+
+
+
 
 /* Wildcard selector to override default styles added by the browser */
 * {
@@ -6,12 +30,13 @@
     box-sizing: border-box;
 }
 
-/* General styles */
+/* ------------------------------General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color:rgb(255, 251, 249);
+    font-size: 14px;
 }
 
 /* Heading styles */
@@ -25,11 +50,62 @@ h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.hidden-cover-text {
+    display: none;
+}
+
+.small-hr {
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Add transparency to the border color */
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* Style to remove underline from hyperlinks */
 a {
     text-decoration: none;
 }
+/* -----------------------------------Navigation bar styles */
 
+/* Styles for the navbar container */
+.navbar-container {
+    background-color: transparent;
+    padding: 0.5em 0em;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: absolute;
+    height: auto;
+    width: 100%;
+}
+
+/* Style for the logo link in navbar */
+.logo-link>img {
+    max-width: 80px;
+    max-height: 40px;
+}
+
+/* Styles for the navbar button icon to override Bootstrap */
+.navbar-toggler {
+    background-color: #eed6c280;
+}
+
+/* Styles for the navbar dropdown items */
+#navbarNav>ul {
+    display: flex;
+    text-align: right;
+}
+
+#navbarNav>ul a {
+    color: #eed6c2;
+    text-transform: uppercase;
+}
+
+.active {
+    color: #e09e67!important;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* Styles for the main heading */
 header {
     background-color: #ecd2be9a;
     position: absolute;
@@ -45,9 +121,9 @@ header {
     line-height: 1em;
 }
 
-/* Logo main heading styles */
+/* -------------------------------------Logo main heading styles */
 h1 {
-    color: #302321;
+    color:#fff;
     text-transform: uppercase;
 }
 
@@ -58,14 +134,14 @@ h1 {
     padding-bottom: 0.5em;
     padding-left: 0.25em;
     padding-right: 0.5em;
-    color:#302321;
+    color:#fff;
 }
 
 #logo-skin {
     font-size: 140%;
     text-align: center;
     letter-spacing: 0.2rem;
-    color: #302321;
+    color: #fff;
 }
 
 #logo-lab {
@@ -74,11 +150,288 @@ h1 {
     letter-spacing: 0.1rem;
 }
 
-/* Navigation links */
+/* -----------------------------------------------Navigation links */
 header a {
     text-decoration: none;
     color: #000000;
 }
+
+/* ------------------------------------------------Hero section (home)*/
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+/* Colour overlay to dim the background image */
+.color-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(95, 95, 95, 0.4);
+    margin: 0;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+#home-hero img {
+    width: 100%;
+    max-height: 550px;
+}
+
+/* Text overlaying hero image */
+#cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:azure;
+    z-index: 1;
+}
+
+#cover-text>h2 {
+    color: azure;
+    text-justify: auto;
+}
+
+#est-tag {
+    font-size: 70%;
+    color: azure;
+    padding-bottom: 2em;
+}
+
+#home-cover-heading, #treatments-cover-heading, #bookings-cover-heading, #contact-cover-heading {
+    margin-top: 0.5em;
+    font-size: 2.1em;
+    font-weight: 400;
+    color: #bebebe;
+    text-shadow:5px 7px 0 #313131;
+}
+
+#cover-text>p {
+    line-height: 8mm;
+    margin: 0px 15% 100px;
+    padding: 0px 10% 100px;
+
+}
+
+/* -----------------------------------------------Scrolling text styles */
+
+/* Styles for the scroll container */ 
+#scroll-container {
+    border-bottom: 3px groove #ecd2be9a;
+    width:100%;
+    padding: 5px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#scroll-text {
+  /* Set the initial position of the text for the animation */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  /* Set the animation properties */
+  -moz-animation: my-animation 27s linear infinite;
+  -webkit-animation: my-animation 27s linear infinite;
+  animation: my-animation 27s linear infinite;
+}
+
+/* Define the animation keyframes for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* Define the animation keyframes for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+/* Animation keyframes */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(200%); }
+    to { -moz-transform: translateX(-200%); }
+  }
+  
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(200%); }
+    to { -webkit-transform: translateX(-200%); }
+  }
+  
+  @keyframes my-animation {
+    0% {
+      -moz-transform: translateX(200%);
+      -webkit-transform: translateX(200%);
+      transform: translateX(200%);
+    }
+  
+    50% { 
+      -moz-transform: translateX(-200%);
+      -webkit-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      -moz-transform: translateX(200%);
+      -webkit-transform: translateX(200%);
+      transform: translateX(200%);
+    }
+  }
+
+/* Style to push main content to fill page */
+main {
+    flex: 1 0 auto;
+}
+
+/* ------------------------------------------Home page content */
+
+/* ------------------------------------------About */
+
+.about {
+    padding: 2em 0;
+    text-align: center;
+    margin: 0 2.5%;
+
+}
+
+.about>div>div>h2 {
+    font-size: 90%;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.7mm;
+}
+
+.page-divider {
+    border: 2px solid black;
+    margin: 0px 12rem;
+}
+
+/* ------------------------------------------Quotes */
+
+.media-body {
+    padding: 1em 0;
+    font-style:italic;
+    color: rgba(95, 95, 95, 0.6)
+}
+
+.media-body p {
+    font-size: 80%;
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.6);
+}
+
+.media-body footer {
+    font-size: 80%;
+    font-style: italic;
+    color: rgba(95, 95, 95, 0.6);
+    background-color:rgb(237, 211, 250);
+
+}
+
+/* ------------------------------------------Treatments */
+
+
+/* -------------------------------------Social media links */
+
+
+.social-networks {
+    padding-top: 10px;
+    margin: 5px 4%;
+}
+
+.social-networks>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.social-networks a {
+    font-size: 32px;
+    color: #302321;
+}
+
+/* ---------------------------------------------Footer Content */
+
+footer {
+    background-color:#eed6c2;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    margin-top: 10px;
+    border-top: 2px ridge black;
+}
+
+/* Style for back-to-top class */
+.back-to-top {
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    /* Stick to the bottom of the viewport */
+    padding-top: 2px;
+    margin-bottom: 0;
+    font-size: 120%;  
+}
+
+.back-to-top a {
+    color: #302321; 
+}
+
+.back-to-top a:hover {
+    color:rgb(221, 189, 102);
+}
+
+/* Footer address styles */
+#footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+    margin: 1px 2%;
+}
+
+#footer-address {
+    color: #302321;
+    text-align: left;
+    letter-spacing: .5mm;
+    font-size: 80%;
+}
+
+#footer-address p {
+    margin: 0.1rem;
+    font-size: 8px;
+}
+
+#footer-block p {
+    margin: 0.1rem;
+    font-size: 8px;
+}
+
+#footer-block {
+    text-align: right;
+    color: #302321;
+    letter-spacing: .5mm;
+    font-size: 75%;
+}
+
+.small-print {
+    font-size: 60%;
+    color: #302321;
+    padding-bottom: 10px;
+}
+
+/* ---------------------------------------------Media queries */
+
+/* --------------Small devices such as mobile phones (up to 576px) */
+@media screen and (min-width: 43em) {
 
 /* Transforms dropbox to full menu on display */
 #dropdown {
@@ -108,330 +461,12 @@ header a {
     display: none;
 }
 
-/* Hero section (home)*/
-#hero {
-    width: 100%;
-    position: relative;
-}
-/* Hero image styles (home) */
-figure {
-    margin: 0;
+.hidden-cover-text {
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 534px;
-    overflow:hidden;
 }
-
-figure img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: bottom left;
-}
-
-/* Colour overlay to dim the background image */
-.color-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(95, 95, 95, 0.4);
-    margin: 0;
-    display: block;
-    max-height: 550px;
-    width: 100%;
-}
-
-/* Text overlaying hero image */
-#cover-text {
-    color: azure;
-    text-align: center;
-    font-size: 100%;
-    padding-top: 3em;
-    margin: 50px 50px;
-}
-
-#cover-text>h2 {
-    /*font-family: 'Tai Heritage Pro', serif;*/
-    color: azure;
-    text-justify: auto;
-}
-
-#est-tag {
-    font-size: 70%;
-    color: azure;
-    padding-bottom: 2em;
-}
-
-#home-cover-heading, #treatments-cover-heading, #bookings-cover-heading, #contact-cover-heading {
-    margin-top: 125px;
-    font-size: 250%;
-}
-
-#cover-text>p {
-    line-height: 8mm;
-    margin: 0px 15%;
-    padding: 0px 10%;
-}
-
-#scroll-container {
-    border-bottom: 3px groove #ecd2be9a;
-    width:100%;
-    padding: 5px 10px;
-    overflow: hidden;
-}
-
-#scroll-text {
-  /* animation properties */
-  -moz-transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  
-  -moz-animation: my-animation 30s linear infinite;
-  -webkit-animation: my-animation 30s linear infinite;
-  animation: my-animation 30s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
-}
-
-/* Animation keyframes */
-@keyframes my-animation {
-  0% {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-
-  50% { /* Adjusted from 0% to 50% */
-    -moz-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
-    -webkit-transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
-    transform: translateX(calc(-100% - 100vw)); /* Starts moving immediately */
-  }
-
-  100% {
-    -moz-transform: translateX(calc(-100% - 100vw));
-    -webkit-transform: translateX(calc(-100% - 100vw));
-    transform: translateX(calc(-100% - 100vw));
-  }
-}
-
-/* Style to push main content to fill page */
-main {
-    flex: 1 0 auto;
-}
-
-/* About section */
-.about {
-    background-color:rgb(255, 251, 249);
-    top: 0;
-    position: relative;
-    margin: 5px 10rem 10px;
-}
-
-/* Home page content */
-#about-home {
-    text-align: center;
-    line-height: 1cm;
-    padding-bottom: 2em;
-}
-
-#about-home>h3 {
-    font-size: 70%;
-    padding-bottom: 1.5em;
-    letter-spacing: 1mm;
-}
-
-.page-divider {
-    border: 2px solid black;
-    margin: 0px 12rem;
-}
-
-/* Social media link styles */
-.social-networks {
-    padding-top: 10px;
-    margin: 5px 4%;
-}
-
-.social-networks>ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.social-networks a {
-    font-size: 32px;
-    color: pink;
-}
-
-/* Footer Content */
-
-footer {
-    background-color:#302321;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    position: relative;
-    margin-top: 10px;
-    border-top: 2px ridge black;
-}
-
-/* Style for back-to-top class */
-.back-to-top {
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-    /* Stick to the bottom of the viewport */
-    padding-top: 10px;
-    font-size: 130%;  
-}
-
-.back-to-top a {
-    color: azure; 
-}
-
-.back-to-top a:hover {
-    color:pink;
-}
-
-/* Footer address styles */
-#footer-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 10px;
-    margin: 3px 3%;
-}
-
-#footer-address {
-    color: azure;
-    text-align: left;
-    letter-spacing: .5mm;
-    font-size: 80%;
 
 }
 
-#footer-block {
-    text-align: center;
-    color: rgb(210, 210, 172);
-    letter-spacing: .5mm;
-    font-size: 75%;
-
-
-}
-
-.small-print {
-    font-size: 60%;
-    color: rgb(210, 210, 172);
-    padding-bottom: 10px;
-}
-
-/* Small devices such as mobile phones (up to 414px) */
-@media screen and (max-width: 684px) {
-
-    body {
-        margin-top: 64px;
-    }
-    
-    /* Dropdown styles */
-    .dropdown {
-        max-width: 13em;
-        margin: 80px auto 0;
-        position: absolute;;
-        width: 100%;
-        text-align: center;
-        right: -60px;
-        top: -65px;
-    }
-    
-    .dropdown-btn {
-        background:#302321;
-        font-size: 18px;
-        text-transform: uppercase;
-        width: 65%;
-        border: none;
-        color: #fff;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0.5em 2px;
-        border-radius: 0.5em;
-        cursor: pointer;
-    }
-    
-    .arrow {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 8px solid #fff;
-        transition: transform ease-in-out 0.3s;
-    }
-    
-    .dropdown-content {
-        list-style: none;
-        position: absolute;
-        top: 3.2em;
-        width: 65%;
-        visibility: hidden;
-        flex-direction: column;
-        transform: translateY(-1em);
-        transition: transform ease 0.3s;
-    }
-    
-    input[type="checkbox"]:checked ~ .dropdown-content {
-        visibility: visible;
-        transform: translateY(0);
-    }
-    
-    .dropdown-content li {
-        background: #2f3238;
-        font-size: 14px;
-        text-align: center;
-        border-radius: 0.5em;
-        text-transform: uppercase;
-        width: 100%;
-        padding-right: 10px;
-    }
-    
-    input[type="checkbox"]:checked + label > .arrow {
-        transform: rotate(180deg);
-    }
-    
-    input[type="checkbox"] {
-        opacity: 0;
-        position: absolute;
-    }
-    
-    input[type="checkbox"]:focus + label {
-        box-shadow: 0 0 20px rgb(83, 83, 83);
-    }
-    
-    .dropdown-content li:hover {
-        background: #1d1f24;
-    }
-    
-    .dropdown-content li a {
-        display: block;
-        padding: 0.7em 0.5em;
-        color: #fff;
-        margin: 0.1em 0;
-        text-decoration: none;
-    }
-}
-
-/* Medium devices such as tables (768px and up) */
+/* -------------------------------------Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
 }
