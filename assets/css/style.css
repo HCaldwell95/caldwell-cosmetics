@@ -540,4 +540,23 @@ main {
 
 /* -------------------------------------Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
+
+
+    .testimonial-background {
+        height: 20rem;
+    }
+
+    .container-testimonial {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .container-testimonial .media-body {
+        flex: 1;
+        margin-left: 10px; /* Add some spacing between the image and the text */
+    }
+    .container-testimonial .review-img {
+        display: block;
+        margin-right: 10px; /* Add some spacing between the image and the text */
+    }
 }
