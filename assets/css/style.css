@@ -460,6 +460,15 @@ main {
 }
 
 /* Footer address styles */
+
+.subscribe-newsletter {
+    background-color:#eed6c2;
+}
+
+.subscribe-newsletter h2 {
+    font-size: 14px;
+}
+
 #footer-box {
     display: flex;
     justify-content: space-between;
