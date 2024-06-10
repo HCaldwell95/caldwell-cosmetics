@@ -2,16 +2,19 @@
 
     Background colours:
 
-    Body background: rgb(255, 251, 249);
-    Hero image overlay: rgba(95, 95, 95, 0.4);
-    Accent Peach: ##eed6c2;
+    Body background: rgb(255, 251, 249); Off-White
+    Body background: rgb(253 247 245); Cream
+    Hero image tint overlay: rgba(95, 95, 95, 0.4);
+    Accent (peach): ##eed6c2;
 
     ----------------------
 
     Font Colours:
     Dark Brown: color: #302321; (also used for social media links)
 
-
+    Button Colours:
+    Subscribe border: solid #9e754e;
+    Subscribe background-color: #c09061;
 
 
 
@@ -35,7 +38,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color:rgb(255, 251, 249);
+    background-color:rgb(253 247 245);
     font-size: 14px;
 }
 
@@ -440,6 +443,11 @@ main {
     border-top: 2px ridge black;
 }
 
+.footer-main h6 {
+    font-size: 8px;
+    font-weight: 700;
+}
+
 /* Style for back-to-top class */
 .back-to-top {
     text-align: center;
@@ -459,8 +467,7 @@ main {
     color:rgb(221, 189, 102);
 }
 
-/* Footer address styles */
-
+/* Styles for the subscribe to newsletter section */
 .subscribe-newsletter {
     background-color:#eed6c2;
 }
@@ -468,6 +475,8 @@ main {
 .subscribe-newsletter h2 {
     font-size: 14px;
 }
+
+/* Footer address styles */
 
 #footer-box {
     display: flex;

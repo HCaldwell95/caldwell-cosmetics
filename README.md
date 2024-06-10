@@ -15,6 +15,8 @@ Scrolling Text:
 https://blog.hubspot.com/website/scrolling-text-css
 https://www.w3schools.com/css/css3_animations.asp
 
+Newsletter:
+https://bootstrapbrain.com/component/bootstrap-newsletter-subscription-form/#code
 
 
 
