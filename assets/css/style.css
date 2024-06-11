@@ -559,7 +559,7 @@ main {
 /* -------------------------------------Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
 
-
+    /*
     .testimonial-background {
         height: 20rem;
     }
@@ -571,10 +571,57 @@ main {
     }
     .container-testimonial .media-body {
         flex: 1;
-        margin-left: 10px; /* Add some spacing between the image and the text */
+        margin-left: 10px;                       /* Add some spacing between the image and the text 
     }
     .container-testimonial .review-img {
         display: block;
-        margin-right: 10px; /* Add some spacing between the image and the text */
+        margin-right: 10px;                      /* Add some spacing between the image and the text 
     }
+    */
+
+    #scroll-text {
+
+        /* Set the animation properties */
+        -moz-animation: my-animation 40s linear infinite;
+        -webkit-animation: my-animation 40s linear infinite;
+        animation: my-animation 40s linear infinite;
+      }
+
+      #navbarNav>ul a {
+        font-size: large;
+    }
+
+    .md-lg-treatments > div > div {
+        padding: 10px;
+    }
+
+    .md-lg-treatments img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* ---------------------------------------Footer styles */
+
+    .back-to-top {
+        padding-bottom: 10px;
+    }
+
+    .subscribe-newsletter {
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+    }
+
+    .subscribe-newsletter h2 {
+        margin-bottom: 8px!important;
+    }
+
+    .social-networks {
+        font-size: 16px;
+    }
+
 }
+
+
+
+
