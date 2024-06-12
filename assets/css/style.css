@@ -297,6 +297,10 @@ main {
     padding-left: 0px;
 }
 
+.social-networks li {
+    text-align: center;
+}
+
 .social-networks a {
     font-size: 32px;
     color: #302321;
@@ -350,17 +354,12 @@ main {
 /* Footer address styles */
 
 #footer-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-top: 0.5%;
     padding-bottom: 1%;
-    margin: 1px 2%;
 }
 
 #footer-address {
     color: #302321;
-    text-align: left;
     letter-spacing: .5mm;
     font-size: 80%;
 }
@@ -370,17 +369,35 @@ main {
     font-size: 8px;
 }
 
-#footer-block p {
-    margin: 0.1rem;
-    font-size: 8px;
+#footer-directions {
+    color: #302321;
+    font-size: 32px;
+    padding-top: 30px;
 }
 
-#footer-block {
-    text-align: right;
+#footer-directions a>i {
     color: #302321;
-    letter-spacing: .5mm;
-    font-size: 75%;
+    font-size: 30px;
 }
+
+#footer-directions p {
+    text-align: center;
+}
+
+.footer-contact p {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+#footer-contact-links {
+    padding: 0;
+}
+
+.footer-contact a {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
 
 .small-print {
     font-size: 60%;
@@ -485,6 +502,16 @@ main {
 
     .social-networks {
         font-size: 16px;
+    }
+
+    
+    #footer-directions a>i {
+        color: #302321;
+        font-size: 30px;
+    }
+    
+    #footer-directions p {
+        text-align: center;
     }
 
 }
