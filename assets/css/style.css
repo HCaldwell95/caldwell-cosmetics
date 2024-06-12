@@ -258,20 +258,20 @@ main {
     margin-bottom: 10px;
 }
 
-.treatment-item h6 {
-    color: #fff;
-    vertical-align: middle;
-    padding-top: 15px;
-}
-
 .bottom-overlay {
     position: relative;
     margin-top: -52px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Background color with opacity */
+    background-color:#313131ea; /* Background color with opacity */
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding-bottom: 10px; /* Adjust padding as needed */
+}
+
+.bottom-overlay > h6 {
+    color: #fff;
+    vertical-align: middle;
+    padding-top: 15px;
 }
 
 /* -------------------------------------Social media links */
