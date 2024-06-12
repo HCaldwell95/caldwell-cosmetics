@@ -150,6 +150,7 @@ a {
     margin-top: 0.5em;
     font-size: 2.1em;
     font-weight: 400;
+    letter-spacing: 2mm;
     color: #bebebe;
     text-shadow:5px 7px 0 #313131;
 }
@@ -399,10 +400,29 @@ main {
         width: 100%;
     }
 
+    #home-cover-heading {
+        font-size: 3em;
+        letter-spacing: 5mm;
+        padding-top: 30px;
+    }
+
     .cover-text {
+        padding-top: 20px;
         font-size: 18px;
+        font-weight: 600;
         letter-spacing: 0.5mm;
     }
+
+    .cover-text-md {
+        letter-spacing: 0.4mm;
+        padding-top: 10px;
+        text-transform: capitalize;
+        font-style:italic;
+        font-weight: 300;
+        color:#e9e9e9;
+        margin: 0px -50px;
+    }
+
 
     #scroll-text {
 
@@ -441,9 +461,6 @@ main {
         display: block;
     }
 
-
-
-
     /* ---------------------------------------Footer styles */
 
     .back-to-top {
@@ -468,63 +485,50 @@ main {
 /* -------------------------------------Medium devices such as tables (1024px and up) */
 @media screen and (min-width: 1024px) {
 
+    .logo-link>img {
+        max-height: 75px;
+        max-width: 75px;
+    }
+
     .hero > div {
-        max-height: 28.125rem;
+        max-height: 35rem;
     }
 
     .hero > div > img {
-        max-height: 28.125rem;
+        max-height: 35rem;
         width: 100%;
     }
 
-    #cover-text {
-        font-size: 30px;
+    #home-cover-heading {
+        font-size: 4em;
+        letter-spacing: 10mm;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+    }
+
+    #est-tag {
+        color: transparent;
+
+    }
+
+    .cover-text {
+        margin: 0px -50px;
+        padding-bottom: 100px;
     }
 
     #scroll-text {
 
         /* Set the animation properties */
-        -moz-animation: my-animation 40s linear infinite;
-        -webkit-animation: my-animation 40s linear infinite;
-        animation: my-animation 40s linear infinite;
+        -moz-animation: my-animation 50s linear infinite;
+        -webkit-animation: my-animation 50s linear infinite;
+        animation: my-animation 50s linear infinite;
       }
 
-      #navbarNav>ul a {
-        font-size: large;
-    }
 
-    .md-lg-treatments > div > div {
-        padding: 10px;
-    }
-
-    .md-lg-treatments img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .treatment-item > div > img {
-        border-radius: 25px;
-    }
 
     /* ---------------------------------------Footer styles */
 
-    .back-to-top {
-        padding-bottom: 10px;
-    }
-
-    .subscribe-newsletter {
-        padding-top: 5px!important;
-        padding-bottom: 5px!important;
-    }
-
-    .subscribe-newsletter h2 {
-        margin-bottom: 8px!important;
-    }
-
-    .social-networks {
-        font-size: 16px;
-    }
 
 }
 
