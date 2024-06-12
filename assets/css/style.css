@@ -398,7 +398,6 @@ main {
     margin-bottom: 2px;
 }
 
-
 .small-print {
     font-size: 60%;
     color: #302321;
@@ -491,6 +490,8 @@ main {
         padding-bottom: 10px;
     }
 
+    /* -------------------------------Subscribe row */
+
     .subscribe-newsletter {
         padding-top: 5px!important;
         padding-bottom: 5px!important;
@@ -504,14 +505,40 @@ main {
         font-size: 16px;
     }
 
+    /* -------------------------------Address column */
+
+    #footer-address h6 {
+        margin-bottom: 0.2rem;
+        font-size: 1rem;
+    }
+    
+    #footer-address p {
+        margin: 0.1rem;
+        font-size: 1rem;
+    }
+
+    /* -------------------------------Directions column */
     
     #footer-directions a>i {
         color: #302321;
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+
+    /* -------------------------------Contact column */
+
+    .footer-contact p {
+        font-size: 20px;
+        margin-bottom: 2px;
     }
     
-    #footer-directions p {
-        text-align: center;
+    #footer-contact-links {
+        padding: 0;
+    }
+    
+    .footer-contact a {
+        font-size: 20px;
+        margin-bottom: 2px;
     }
 
 }
