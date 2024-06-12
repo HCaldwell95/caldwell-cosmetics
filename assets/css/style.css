@@ -23,9 +23,6 @@
 
 */
 
-
-
-
 /* Wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -48,6 +45,12 @@ h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.small-hr {
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Add transparency to the border color */
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* Style to hide unwanted headings */
 .hidden-heading {
     display: none;
@@ -55,12 +58,6 @@ h2, h3, h4, h5, h6 {
 
 .hidden-cover-text {
     display: none;
-}
-
-.small-hr {
-    border: 1px solid rgba(0, 0, 0, 0.5); /* Add transparency to the border color */
-    width: 70%;
-    margin: 0 auto;
 }
 
 /* Style to remove underline from hyperlinks */
@@ -108,58 +105,11 @@ a {
     font-size: 18px;
 }
 
-/* Styles for the main heading */
-header {
-    background-color: #ecd2be9a;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    line-height: 1em;
-}
-
-/* -------------------------------------Logo main heading styles */
-h1 {
-    color:#fff;
-    text-transform: uppercase;
-}
-
-#logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-bottom: 0.5em;
-    padding-left: 0.25em;
-    padding-right: 0.5em;
-    color:#fff;
-}
-
-#logo-skin {
-    font-size: 140%;
-    text-align: center;
-    letter-spacing: 0.2rem;
+.sign-up a {
     color: #fff;
 }
 
-#logo-lab {
-    font-size: 190%;
-    padding-top: 0.1em;
-    letter-spacing: 0.1rem;
-}
-
-/* -----------------------------------------------Navigation links */
-header a {
-    text-decoration: none;
-    color: #000000;
-}
-
-/* ------------------------------------------------Hero section (home)*/
+/* ------------------------------------------------Hero section */
 .hero {
     width: 100%;
     position: relative;
@@ -317,32 +267,8 @@ main {
 
 /* ------------------------------------------Treatments */
 
-
-
-
-
-/* ------------------------------------------Quotes */
-
-.media-body {
-    padding-top: 1em;
-    font-style:italic;
-    color: rgba(95, 95, 95, 0.8)
-}
-
-.media-body p {
-    font-size: calc(1vw + 1vh); 
-    font-style: italic;
-    color: rgba(95, 95, 95, 0.8);
-    padding-bottom: 2px;
-}
-
-.media-body footer {
-    font-size: calc(1vw + 1vh); 
-    font-style: italic;
-    color:#e09e67;
-    font-weight: 600;
-    background-color: transparent;
-
+#about-treatments img {
+    border-radius: 25px;
 }
 
 /* ------------------------------------------Testimonial Styles */
@@ -519,65 +445,95 @@ main {
 
 /* ---------------------------------------------Media queries */
 
-/* --------------Small devices such as mobile phones (up to 576px) */
-@media screen and (min-width: 43em) {
+/* -------------------------------------Medium devices such as tables (768px and up) */
+@media screen and (min-width: 768px) {
 
-/* Transforms dropbox to full menu on display */
-#dropdown {
-    display: none;
-}
+    .active {
+        background-color: rgba(95, 95, 95, 0.4);
+        border-radius: 5px;
+    }
 
-/* Remove backgrounds and borders from menu */
-.dropdown a {
-    text-transform: uppercase;
-    background-color: transparent;
-    border: none;
-    padding: 0 20px;
-}
-/* Positioning styles */
-.dropdown-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+    .hero > div {
+        max-height: 28.125rem;
+    }
 
-.dropdown-content>li {
-    padding-left: 1rem;
-    list-style-type: none;
-}
+    .hero > div > img {
+        max-height: 28.125rem;
+        width: 100%;
+    }
 
-.dropdown-btn {
-    display: none;
-}
+    #scroll-text {
 
-.hidden-cover-text {
-    display: block;
-}
+        /* Set the animation properties */
+        -moz-animation: my-animation 40s linear infinite;
+        -webkit-animation: my-animation 40s linear infinite;
+        animation: my-animation 40s linear infinite;
+      }
+
+      #navbarNav>ul a {
+        font-size: large;
+    }
+
+    .treatment-item {
+        vertical-align: middle;
+    }
+
+    .treatment-item img {
+        border-radius: 15px;
+    }
+
+
+    .md-lg-treatments {
+        background-color: rgba(95, 95, 95, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .md-lg-treatments > div > div {
+        padding: 10px;
+    }
+
+    .md-lg-treatments img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+
+
+    /* ---------------------------------------Footer styles */
+
+    .back-to-top {
+        padding-bottom: 10px;
+    }
+
+    .subscribe-newsletter {
+        padding-top: 5px!important;
+        padding-bottom: 5px!important;
+    }
+
+    .subscribe-newsletter h2 {
+        margin-bottom: 8px!important;
+    }
+
+    .social-networks {
+        font-size: 16px;
+    }
 
 }
 
 /* -------------------------------------Medium devices such as tables (768px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
-    /*
-    .testimonial-background {
-        height: 20rem;
+    .hero > div {
+        max-height: 28.125rem;
     }
 
-    .container-testimonial {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .hero > div > img {
+        max-height: 28.125rem;
+        width: 100%;
     }
-    .container-testimonial .media-body {
-        flex: 1;
-        margin-left: 10px;                       /* Add some spacing between the image and the text 
-    }
-    .container-testimonial .review-img {
-        display: block;
-        margin-right: 10px;                      /* Add some spacing between the image and the text 
-    }
-    */
 
     #scroll-text {
 
@@ -601,6 +557,10 @@ main {
         display: block;
     }
 
+    .treatment-item > div > img {
+        border-radius: 25px;
+    }
+
     /* ---------------------------------------Footer styles */
 
     .back-to-top {
@@ -621,7 +581,5 @@ main {
     }
 
 }
-
-
 
 
