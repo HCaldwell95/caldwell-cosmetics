@@ -47,7 +47,7 @@ h2, h3, h4, h5, h6 {
 
 .small-hr {
     border: 1px solid rgba(0, 0, 0, 0.5); /* Add transparency to the border color */
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -253,6 +253,12 @@ main {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
+}
+
+#maps h2 {
+    text-align: center;
+    font-size: 100%;
+    letter-spacing: 0.7mm;
 }
 
 /* ------------------------------------------Treatments */
@@ -731,13 +737,17 @@ main {
         -moz-animation: my-animation 55s linear infinite;
         -webkit-animation: my-animation 55s linear infinite;
         animation: my-animation 55s linear infinite;
-      }
+    }
 
-      .about {
+    .about {
         font-size: 24px;
     }
 
     .about div > div > h2 {
+        font-size: 32px;
+    }
+
+    #maps h2 {
         font-size: 32px;
     }
 
