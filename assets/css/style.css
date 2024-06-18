@@ -426,7 +426,7 @@ main {
 }
 
 .footer-contact a {
-    font-size: 10px;
+    font-size: 8px;
     margin-bottom: 2px;
 }
 
@@ -465,6 +465,7 @@ main {
         font-size: 3em;
         letter-spacing: 5mm;
         padding-top: 30px;
+        text-shadow:8px 10px 0 #313131;
     }
 
     .cover-text {
@@ -597,7 +598,7 @@ main {
     }
     
     .footer-contact a {
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 2px;
     }
 
@@ -629,7 +630,6 @@ main {
         letter-spacing: 10mm;
         padding-top: 20px;
         padding-bottom: 10px;
-        text-shadow:8px 10px 0 #313131;
     }
 
 
