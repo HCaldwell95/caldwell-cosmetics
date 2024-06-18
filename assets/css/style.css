@@ -625,12 +625,13 @@ main {
     }
 
     #home-cover-heading {
-        font-size: 4em;
+        font-size: 4em; 
         letter-spacing: 10mm;
         padding-top: 20px;
         padding-bottom: 10px;
-
+        text-shadow:8px 10px 0 #313131;
     }
+
 
     #est-tag {
         color: transparent;
@@ -718,7 +719,8 @@ main {
         font-size: 5em;
         letter-spacing: 10mm;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 50px;
+        text-shadow:12px 14px 0 #313131;
     }
 
     #est-tag {
@@ -727,7 +729,7 @@ main {
 
     .cover-text {
         margin: 0px -50px;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         font-size: 26px;
     }
 
