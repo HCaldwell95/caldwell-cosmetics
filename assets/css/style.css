@@ -291,6 +291,12 @@ main {
     padding-top: 15px;
 }
 
+/* ------------------------------------------Coming Soon Overlay */
+
+.coming-soon-text {
+    font-size: 30px;
+}
+
 /* -------------------------------------Social media links */
 
 .social-networks {
