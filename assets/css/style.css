@@ -304,6 +304,7 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
     padding-left: 0px;
+    padding-right: 0px!important;
 }
 
 .social-networks li {
@@ -499,6 +500,8 @@ button {
 /* -------------------------------------Medium devices such as tables (768px and up) */
 @media screen and (min-width: 768px) {
 
+    /* -----------------------------------Navigation bar styles */
+
     .logo-link>img {
         max-height: 75px;
         max-width: 75px;
@@ -509,6 +512,12 @@ button {
         background-color: rgba(95, 95, 95, 0.4);
         border-radius: 5px;
     }
+
+    #navbarNav>ul a {
+        font-size: large;
+    }
+
+    /* ------------------------------------------Hero image content */
 
     .hero > div {
         max-height: 28.125rem;
@@ -543,18 +552,37 @@ button {
         margin: 0px -50px;
     }
 
+    /* -----------------------------------------------Scrolling text styles */
 
     #scroll-text {
-
+        font-size: 16px;
         /* Set the animation properties */
         -moz-animation: my-animation 40s linear infinite;
         -webkit-animation: my-animation 40s linear infinite;
         animation: my-animation 40s linear infinite;
+
       }
 
-      #navbarNav>ul a {
-        font-size: large;
+    /* ------------------------------------------About */
+
+    .about>div>div>h2 {
+        font-size: 18px;
     }
+
+
+    .about>div>div>p {
+        font-size: 16px;
+    }
+
+    /* ---------------------------------------Google Maps */    
+
+    #maps h2 {
+        text-align: center;
+        font-size: 100%;
+        letter-spacing: 0.7mm;
+    }
+
+    /* ------------------------------------------Treatments */
 
     .treatment-item {
         vertical-align: middle;
@@ -600,7 +628,6 @@ button {
         padding-top: 5px!important;
         padding-bottom: 5px!important;
         width: 100%;
-        padding-left: 30px;
     }
 
     .subscribe-newsletter h2 {
@@ -619,6 +646,12 @@ button {
         font-size: 16px;
         padding-left: 6px;
     }
+
+    #subscribe-btn {
+        margin-top: 0px!important;
+    }
+
+    /* -------------------------------Social media links */
 
     .social-networks {
         font-size: 16px;
@@ -690,10 +723,8 @@ button {
         padding-bottom: 10px;
     }
 
-
     #est-tag {
         color: transparent;
-
     }
 
     .cover-text {
@@ -702,12 +733,23 @@ button {
     }
 
     #scroll-text {
-
+        font-size: 20px;
+        font-weight: 600;
         /* Set the animation properties */
         -moz-animation: my-animation 50s linear infinite;
         -webkit-animation: my-animation 50s linear infinite;
         animation: my-animation 50s linear infinite;
-      }
+    }
+
+    .about>div>div>h2 {
+        font-size: 22px;
+    }
+
+
+    .about>div>div>p {
+        font-size: 22px;
+    }
+
 
     .gmap_canvas iframe {
         width: 100%;
